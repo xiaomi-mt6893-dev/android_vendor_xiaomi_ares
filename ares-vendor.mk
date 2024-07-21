@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
     vendor/xiaomi/ares/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/ares/proprietary/vendor/bin/bp_kmsetkey_ca:$(TARGET_COPY_OUT_VENDOR)/bin/bp_kmsetkey_ca \
-    vendor/xiaomi/ares/proprietary/vendor/bin/bt_dump:$(TARGET_COPY_OUT_VENDOR)/bin/bt_dump \
     vendor/xiaomi/ares/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
     vendor/xiaomi/ares/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
     vendor/xiaomi/ares/proprietary/vendor/bin/conninfra_loader:$(TARGET_COPY_OUT_VENDOR)/bin/conninfra_loader \
@@ -47,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
+    vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
     vendor/xiaomi/ares/proprietary/vendor/bin/volte_rcs_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_rcs_ua \
     vendor/xiaomi/ares/proprietary/vendor/bin/vpud:$(TARGET_COPY_OUT_VENDOR)/bin/vpud \
-    vendor/xiaomi/ares/proprietary/vendor/bin/wifi_dump:$(TARGET_COPY_OUT_VENDOR)/bin/wifi_dump \
     vendor/xiaomi/ares/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/xiaomi/ares/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
     vendor/xiaomi/ares/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
@@ -231,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
+    vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
@@ -238,7 +238,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/hw/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
-    vendor/xiaomi/ares/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
@@ -812,6 +811,7 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu \
+    android.hardware.usb@1.2-service-mediatekv2 \
     fod \
     gnss-mtk \
     gnss@2.1-service \
