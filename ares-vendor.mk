@@ -554,6 +554,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/HEVCSecureVdecCA.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/com.fingerprints.extension@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@3.0.so \
+    vendor/xiaomi/ares/proprietary/vendor/lib64/com.xiaomi.plugin.mibokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.mibokeh.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
