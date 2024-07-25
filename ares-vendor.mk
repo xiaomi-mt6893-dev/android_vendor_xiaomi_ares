@@ -999,6 +999,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam.featurepipe.vsdof_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.vsdof_util.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.logicalmodule.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam_3rdcalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdcalibration.so \
+    vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam_3rdparty.arc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.arc.common.so \
+    vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam_3rdparty.arc.sat.wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.arc.sat.wrapper.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam_3rdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.core.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam_3rdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.customer.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtkcam_3rdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.mtk.so \
