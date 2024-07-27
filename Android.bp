@@ -8,6 +8,17 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "ImsService",
+	owner: "xiaomi",
+	apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "HotwordEnrollmentOKGoogleRISCV",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
@@ -29,12 +40,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-dex_import {
-	name: "mediatek-carrier-config-manager",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-carrier-config-manager.jar"],
 }
 
 dex_import {
@@ -68,12 +73,6 @@ dex_import {
 }
 
 dex_import {
-	name: "mediatek-services",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-services.jar"],
-}
-
-dex_import {
 	name: "mediatek-telecom-common",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/mediatek-telecom-common.jar"],
@@ -89,12 +88,6 @@ dex_import {
 	name: "mediatek-telephony-common",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/mediatek-telephony-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-wfo-legacy",
-	owner: "xiaomi",
-	jars: ["proprietary/system/framework/mediatek-wfo-legacy.jar"],
 }
 
 dex_import {
