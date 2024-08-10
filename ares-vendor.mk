@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/ares
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ares/proprietary/vendor/etc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml \
     vendor/xiaomi/ares/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/xiaomi/ares/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/ares/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -40,10 +41,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service.beanpod \
+    vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service.mitee:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service.mitee \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
-    vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
@@ -67,6 +68,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/xiaomi/ares/proprietary/vendor/bin/netdagent:$(TARGET_COPY_OUT_VENDOR)/bin/netdagent \
     vendor/xiaomi/ares/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
+    vendor/xiaomi/ares/proprietary/vendor/bin/tee-supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/tee-supplicant \
     vendor/xiaomi/ares/proprietary/vendor/bin/teei_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/teei_daemon \
     vendor/xiaomi/ares/proprietary/vendor/bin/thermal:$(TARGET_COPY_OUT_VENDOR)/bin/thermal \
     vendor/xiaomi/ares/proprietary/vendor/bin/thermal_core:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_core \
@@ -273,10 +275,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc \
+    vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.mitee.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
-    vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
@@ -297,6 +299,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
+    vendor/xiaomi/ares/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/xiaomi/ares/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
@@ -381,14 +384,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/egl/mt6893/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6893/libGLES_mali.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
-    vendor/xiaomi/ares/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/audio.primary.mt6893.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6893.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/audio.r_submix.mt6893.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6893.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/mt6893/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6893/vulkan.mali.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
-    vendor/xiaomi/ares/proprietary/vendor/lib/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal_hal.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
@@ -555,11 +556,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
-    vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/consumerir.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.common.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
+    vendor/xiaomi/ares/proprietary/vendor/lib64/hw/gatekeeper.mitee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.mitee.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/hwcomposer.mt6893.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt6893.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.beanpod.so \
@@ -569,7 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.elliptic.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/sensors.mt6893.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6893.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.touch.detect.so \
-    vendor/xiaomi/ares/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
@@ -977,6 +977,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsnr.so \
+    vendor/xiaomi/ares/proprietary/vendor/lib64/libmt_mitee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt_mitee.so \
+    vendor/xiaomi/ares/proprietary/vendor/lib64/libmt_mitee@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt_mitee@1.2.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtcloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtcloader.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtk-fusion-ril-prop-vsim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-fusion-ril-prop-vsim.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
@@ -1197,6 +1199,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/wechat.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/wechat.beanpod.so \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/3d08821c-33a6-11e6-a1fa089e01c83aa2.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/3d08821c-33a6-11e6-a1fa089e01c83aa2.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/7b30b820-a9ea-11e5-b1780002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/7b30b820-a9ea-11e5-b1780002a5d5c51b.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/a985d3eb-3b52-4d44-be6c628a813561e8.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/a985d3eb-3b52-4d44-be6c628a813561e8.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta \
+    vendor/xiaomi/ares/proprietary/vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta \
     vendor/xiaomi/ares/proprietary/vendor/thh/ta/020f0000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/020f0000000000000000000000000000.ta \
     vendor/xiaomi/ares/proprietary/vendor/thh/ta/05120000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/05120000000000000000000000000000.ta \
     vendor/xiaomi/ares/proprietary/vendor/thh/ta/06090000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/06090000000000000000000000000000.ta \
