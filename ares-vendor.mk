@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
-    vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/xiaomi/ares/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
@@ -385,7 +384,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/egl/mt6893/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6893/libGLES_mali.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
-    vendor/xiaomi/ares/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/audio.primary.mt6893.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6893.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/audio.r_submix.mt6893.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6893.so \
     vendor/xiaomi/ares/proprietary/vendor/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
@@ -558,7 +556,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
-    vendor/xiaomi/ares/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/consumerir.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.common.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
     vendor/xiaomi/ares/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
